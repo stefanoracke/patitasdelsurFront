@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Mouse+Memoirs&display=swap');
+
+
+*{
+    font-family: 'Archivo Narrow', sans-serif;
+    margin:0;
+    padding: 0;
+    height:100%;
+    scroll-behavior: smooth;    
+    --colorNav: #fff;
+    --textHome: #fff;
+    --backgroundHome: #c0b9dd;
+    --colorText: #f33f32;
+    --minionYellow: #fee440;
+    --red: #fee440;
+    --lavanda: #c0b9dd;
+    --title: 'Mouse Memoirs', sans-serif;
+    --lightpurple: #21a0a0;
+    --purple: #ffbc42;
+    --green: #cc3363;
+    --btn-colors: #eba22d;
+}
+
+body::-webkit-scrollbar{
+    width: 10px;
+    background: rgb(32, 32, 32);
+    border-left: 1px solid rgb(32, 32, 32);
+}
+
+body::-webkit-scrollbar-thumb{
+    border-radius: 7px;
+    background: var(--green);
+    border-left: 2px solid rgb(32, 32, 32);
+}

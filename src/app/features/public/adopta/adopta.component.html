@@ -1,0 +1,21 @@
+<div class="HolaMundo">
+
+    <form class="otra" [formGroup]="formularioAnidado" (ngSubmit)="send()">
+        <h3>Datos</h3>
+        <p>{{formularioAnidado.value | json}}</p>
+        <h4>Telefono Fijo</h4>
+        <div formGroupName="fijo">            
+            <input placeholder="prefijo" formControlName="prefijo"/>
+            <input placeholder="numero" formControlName="numero"/>
+        </div>
+        <h4>Telefono Movil</h4>
+        <div formGroupName="movil">
+            
+            <input placeholder="prefijo" formControlName="prefijo"/>
+            <input placeholder="numero" formControlName="numero"/>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+<!-- <app-manitos></app-manitos> -->

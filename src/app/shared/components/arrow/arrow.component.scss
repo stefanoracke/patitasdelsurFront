@@ -1,0 +1,56 @@
+.center{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#Arrow_1{
+    stroke-dasharray:900px;
+    stroke-dashoffset: 900px;
+    animation:otra-animacion 4s ease-in-out infinite;
+    fill:none;
+    stroke:#fff;
+    stroke-width: 3;
+}
+
+svg path{
+    stroke-dasharray:300px;
+    stroke-dashoffset: 300px;
+    animation:otra-animacion 3s ease-in infinite;
+    fill:none;
+    stroke:#fff;
+    stroke-width: 3;
+}
+
+
+
+
+@keyframes flechas{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(-40%)
+    }
+}
+
+@keyframes fade-out {
+    0%{
+        opacity:1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes otra-animacion {
+    0%{
+        fill:transparent
+    }
+    
+    100%{
+        stroke-dashoffset: 0;
+        
+    }
+}

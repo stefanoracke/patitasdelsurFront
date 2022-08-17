@@ -1,0 +1,134 @@
+
+
+
+
+.curve{
+    width:100%;
+    background: url('./../../../../assets/svg/wavehome.svg');
+    background-repeat:no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    
+}
+
+.home .container{
+    display:flex;
+    height: 100%;
+    align-items:center;
+    width:100%;
+    color: #fff;
+    justify-content: space-between;
+
+}
+
+.home .container .description{
+    display:flex;
+    position:relative;
+    flex-direction:column;
+    width:40%;
+    height:100%;
+    font-weight:200;
+    letter-spacing: 2px;
+    justify-content:center;
+    align-items:baseline;
+    font-size: calc(1em + 1vh);
+    transform: translateY(-50px) translateX(142px);
+}
+#cordoba{
+    display:inline;
+    
+}
+
+p{
+    height:fit-content;
+}
+.home .container .description .text-container i {
+    display:inline;
+}
+
+.home .container .description .text-container i img{
+    width: calc(3.2em + 1vh);
+    transform: translate(-12px, 10px);
+}
+
+.home .container .description .text-container p{
+    font-size: calc(1.5em + 1vh);
+    text-align:justify;
+}
+
+.description .btn-container{
+    margin-top:40px;
+    display: flex;
+    justify-content:flex-start;
+    
+}
+
+.home .container .description .btn-container .btn-adopta{
+    width: fit-content;
+    height: fit-content;
+    position:relative;
+    padding: 5px 10px;
+    border-radius: 30px;
+    box-shadow:0 -1px 2px black,
+    1px 0 2px rgb(0,0,0,0.5),
+    -1px 0 2px rgb(0,0,0,0.5),
+    0 0 10px rgb(0,0,0,0.5);
+    ;
+    letter-spacing:2px;
+    font-size: calc(1.2em + 1vh);
+    background: #a14da0;
+    color:#fff;
+    cursor: pointer;
+    transition: .65s ease;
+    width: 250px;
+    display:flex;
+    justify-content:center;
+}
+
+.home .container .description .btn-container .btn-adopta span{
+    font-family: var(--title) !important;
+}
+
+.home .container .description .btn-adopta:hover{
+    transform: scale(1.1);
+    font-size: calc(1em + 1vh);
+    filter: brightness(1.2)
+}
+
+.home .container .description{
+    height: fit-content;
+}
+
+.home .container .description h1{
+    letter-spacing: 2px;
+    transform: translateX(75px)
+}
+
+
+.home .container .contenido #bimba{
+    position: absolute;
+    top: 70px;
+    right:-0%;
+    width: 450px;
+    height: auto;
+    
+}
+
+.home .container .contenido #gato{
+    position: absolute;
+    top: 130px;
+    right:15%;
+    width: 550px;
+    height: auto;
+    
+}
+
+
+
+
+app-huellitas{
+    transform: scale(1.4);
+    position: absolute;
+    left: 480px;
+    bottom:-250px;
+}

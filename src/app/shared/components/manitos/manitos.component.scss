@@ -1,0 +1,55 @@
+#Manoizq1 path{
+    stroke-width: 3;
+    z-index:2;
+}
+
+#mancha{
+    z-index:1;
+}
+
+svg{
+    transform: scale(1.6) translateX(200px)
+}
+
+#Mano-derecha path{
+    stroke-width: 3;
+    z-index:2;
+}
+
+.center{
+    display:flex;
+    justify-content: center;
+    width:100%
+}
+
+#Manos{
+    animation: manos 1s linear;
+}
+
+#corazones path{
+    opacity:0;
+    animation: corazones 2s ease 1s forwards
+}
+
+@keyframes corazones {
+    0%{
+        transform: translateY(250px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes manos {
+    0%{
+        transform: translateY(500px);
+        
+    }
+    100%{
+        transform: translateY(0);
+        
+    }
+}
+

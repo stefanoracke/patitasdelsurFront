@@ -1,0 +1,14 @@
+.contact{
+    background: var(--lightpurple);
+    width:100%;
+    position:relative;
+}
+
+.contact .wave{
+    width:100%;
+    background: url('./../../../../../assets/svg/wavefooter.svg');
+    position: relative;
+    background-repeat:no-repeat;
+    background-position-y: 70%;
+    background-size: cover;
+}

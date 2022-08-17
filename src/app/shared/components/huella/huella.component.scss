@@ -1,0 +1,56 @@
+.contenido{
+    display:flex;
+    width:100%;
+    justify-content:center;
+    align-items:center;
+}
+
+svg{
+    position:relative;
+    transform-origin: 0 0;
+}
+
+#corazon{
+    animation: animate 4s ease infinite;
+    transform-origin: center;
+}
+
+// #dedo1{
+//     animation:fill-finger 5s ease infinite;
+// }
+// #dedo2{
+//     animation:fill-finger 5s ease infinite;
+//     animation-delay: 1s;
+// }
+// #dedo3{
+//     animation:fill-finger 5s ease infinite;
+//     animation-delay: 2s;
+// }
+// #dedo4{
+//     animation:fill-finger 5s ease infinite;
+//     animation-delay: 3s;
+// }
+
+@keyframes fill-finger {
+    50%{
+        fill: red;
+    }
+    100%{
+        fill:transparent
+    }
+}
+
+
+
+@keyframes animate {
+    0%{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.4) translateY(-35px);
+    }
+    100%{
+        transform: scale(1);
+    }
+}

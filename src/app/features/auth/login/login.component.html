@@ -1,0 +1,17 @@
+<div class="login">
+    <div class="login-card">
+        <h1>Ingrese a patitas</h1>
+        <form [formGroup]="loginForm" ngSubmit="submit()">
+            <p>Email:</p>
+            <input placeholder="email@example.com" formControlName="email"/>
+            <small *ngIf="email?.errors?.['required'] && email?.touched">Campo requerido</small>
+            <small *ngIf="email?.errors?.['email']">Debe ser un email válido</small>
+            <p>Password:</p> 
+            <input placeholder="********" formControlName="password" type="password" />
+            <small *ngIf="password?.errors?.['required'] && password?.touched">Campo requerido</small>
+            <div class="btn-container">
+                <button type="submit" (click)="submit()">Ingresar</button>
+            </div>
+        </form>
+    </div>
+</div>

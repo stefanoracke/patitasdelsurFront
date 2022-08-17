@@ -1,0 +1,38 @@
+.HolaMundo{
+    height: 200px;
+    
+}
+
+.otra{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+
+.otra p{
+    height:fit-content
+}
+
+.otra h3{
+    height: fit-content;
+}
+
+.otra div{
+    height: 100px;
+    display:flex;
+    align-items: center;
+    width:50%;
+    justify-content:space-around;
+}
+
+input{
+    height: 40px;
+}
+
+button{
+    width:40%
+}
+
+app-manitos{
+    position:absolute;
+}
