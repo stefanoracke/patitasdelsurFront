@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { SharedModule } from 'src/app/shared/shared/shared.module';
 
 import { PublicRoutingModule } from './public-routing.module';
 import { HomeComponent } from './home/home.component';
@@ -12,7 +13,6 @@ import { ComponentsModule } from 'src/app/shared/components/components.module';
 import { HomeLayoutComponent } from './home-components/home-layout/home-layout.component';
 import { AdoptaComponent } from './adopta/adopta.component';
 import { ProvisorioComponent } from './provisorio/provisorio.component';
-import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -31,7 +31,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     CommonModule,
     ComponentsModule,
     PublicRoutingModule,
-    ReactiveFormsModule
+    SharedModule
   ]
 })
 export class PublicModule { }
