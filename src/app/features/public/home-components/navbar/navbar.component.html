@@ -1,12 +1,12 @@
-<nav class="navbar">
-    <div class="org-name"><a href=""><img src="./../../../../../assets/patitas-con-fondo.png" alt="" srcset="">Patitas del sur</a></div>
+<nav class="navbar" [ngClass]="{'changeColor':changeColor}">
+    <div class="org-name" [ngClass]="{'size':changeColor}"><a href=""><img src="./../../../../../assets/patitas-con-fondo.png" alt="" srcset="">Patitas del sur</a></div>
     <div class="navigation-list">
-        <ul>
-            <li><a href="adopciones">Adopciones</a></li>
-            <li><a href="#historia">Nuestra historia</a></li>
-            <li><a href="#donar">Donaciones</a></li>          
-            <li><a href="#contact">Contactanos</a></li>
-            <li><a href="se-provi">Sé provi 🏡</a></li>
+        <ul [ngClass]="{'ul-transform':changeColor}">
+            <li><a [ngClass]="{'color-a':changeColor}" href="adopciones">Adopciones</a></li>
+            <li><a [ngClass]="{'color-a':changeColor}" href="#historia">Nuestra historia</a></li>
+            <li><a [ngClass]="{'color-a':changeColor}" href="#donar">Donaciones</a></li>          
+            <li><a [ngClass]="{'color-a':changeColor}" href="#contact">Contactanos</a></li>
+            <li><a [ngClass]="{'color-a':changeColor}" href="se-provi">Sé provi 🏡</a></li>
         </ul>
     </div>
 </nav>

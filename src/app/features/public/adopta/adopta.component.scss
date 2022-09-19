@@ -1,38 +1,49 @@
-.HolaMundo{
-    height: 200px;
-    
+.grid-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: var(--title)!important;
+    font-size: calc(2rem + 1vw);
+    overflow: hidden;
 }
 
-.otra{
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-}
-
-.otra p{
-    height:fit-content
-}
-
-.otra h3{
-    height: fit-content;
-}
-
-.otra div{
-    height: 100px;
+.grid-container > div{
     display:flex;
+    justify-content: center;
     align-items: center;
-    width:50%;
-    justify-content:space-around;
+    min-height: 100vh;
+    transition: .6s ease-in;
+    cursor: pointer;
+    justify-content: center;
+    text-align: center;
 }
 
-input{
-    height: 40px;
+.grid-container > div h1{
+    height: fit-content;
+    font-family: var(--title)!important;
+    letter-spacing: 10px;
+    transition: .5s ease-in;
+    color: #333;
 }
 
-button{
-    width:40%
+.grid-container > div:hover{
+    transform: scale(1.1);
+
 }
 
-app-manitos{
-    position:absolute;
+.grid-container > div:hover h1{
+    text-shadow: 0 0 10px #fff;
+}
+
+.bg-2{
+    background: url('./../../../../assets/perro.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-1{
+    background: url('./../../../../assets/gatito.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }

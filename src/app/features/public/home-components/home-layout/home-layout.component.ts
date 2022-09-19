@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Route, Router } from '@angular/router';
 
 @Component({
   selector: 'app-home-layout',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeLayoutComponent implements OnInit {
   public changeText = false
-  constructor() { }
+  constructor( public router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  redirectTo(route:string){
+    this.router.navigate(['/', route]);
   }
 
 }

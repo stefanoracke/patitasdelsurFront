@@ -1,7 +1,7 @@
 .history{
     background: var(--purple);  
     width:100%;
-    height: 230vh;
+    min-height: 230vh;
 }
 
 .history .wave{
@@ -15,7 +15,7 @@
 
 .history .grid-layout{
     display:grid;
-    
+    padding:13vh;
     grid-template-areas: 'foto historia'
                          'patitas lugar'
                          'wave wave';
@@ -199,4 +199,21 @@ app-arrow{
     transform: scale(1.1);
     font-size: calc(1em + 1vh);
     filter: brightness(1.2)
+}
+
+
+@media (max-width:1000px) {
+    .history .grid-layout{
+        display:grid;
+        
+        grid-template-areas: 'foto'
+                            'historia'
+                             'patitas'
+                             'lugar'
+                             'wave';
+        grid-template-columns: 100%;
+
+    
+    }
+    
 }

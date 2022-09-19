@@ -7,8 +7,8 @@
                     <p id="cordoba">de Córdoba </p><i><img src="./../../../../assets/argentina.png"></i>
                 </div>
                 <div class="btn-container" >
-                    <div class="btn-adopta" (mouseover)="changeText=true" (mouseout)="changeText=false"><span *ngIf="!changeText">¿Querés adoptar?</span>
-                        <span *ngIf="changeText">🧡 Siii 🧡</span></div>
+                    <div class="btn-adopta" (click)="redirectTo('adopciones')" (mouseover)="changeText=true" (mouseout)="changeText=false"><span *ngIf="!changeText">¿Querés adoptar?</span>
+                        <span *ngIf="changeText" class="changeText">🧡 Siii 🧡</span></div>
                 </div>
             </div>
             

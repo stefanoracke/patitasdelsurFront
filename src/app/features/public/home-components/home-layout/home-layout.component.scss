@@ -160,6 +160,18 @@ p{
     filter:brightness(.8);
 }
 
+.changeText{
+    animation: appear 1s forwards;
+    opacity: 0;
+}
+
+@keyframes appear {
+    100%{
+        opacity: 1;
+    }
+
+}
+
 
 
 app-huellitas{
